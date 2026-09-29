@@ -1,4 +1,4 @@
-# UPWIECON 2026 — Redesigned Frontend
+# UPWIECON 2027 — Redesigned Frontend
 
 A modern, premium redesign of the UPWIECON 2026 conference website
 (source of truth: https://nielit.ac.in/upwiecon2026/), rebuilt with
@@ -25,16 +25,31 @@ npm run preview
 
 ## IMPORTANT — Replace placeholder logos
 
-This project was built in a sandbox with no internet access, so three
-of the four required header logos could not be downloaded from the
-live site. They are currently **placeholder SVGs** with a text label,
-located at:
+This project was built in a sandbox with no internet access, so the required header logos could not be downloaded from the live site. They are currently **placeholder SVGs** with text labels.
 
+Replace the placeholder files with the official logos:
+
+```text
+src/assets/logos/wit-logo-placeholder.svg
+→ Replace with the real WIT logo (site's logo1.png)
+
+src/assets/logos/ieee-logo-placeholder.svg
+→ Replace with the real IEEE logo (site's ieee_logo.jpg)
+
+src/assets/logos/ieee-up-wie-placeholder.svg
+→ Replace with the real IEEE UP Section WIE logo (site's ieee_up.jpg)
+
+src/assets/logos/wie-logo-placeholder.svg
+→ Replace with the real IEEE WIE logo
 ```
-src/assets/logos/nielit-logo-placeholder.svg      → replace with the real NIELIT logo (site's logo1.png)
-src/assets/logos/ieee-up-wie-placeholder.svg      → replace with the real IEEE UP Section WIE logo (site's ieee_up.jpg)
-src/assets/logos/ieee-logo-placeholder.svg        → replace with the real IEEE logo (site's ieee_logo.jpg)
-```
+
+The final header should display the logos of:
+
+* **WIT** – Women's Institute of Technology
+* **IEEE** – Institute of Electrical and Electronics Engineers
+* **IEEE UP Section** – IEEE Uttar Pradesh Section
+* **IEEE WIE** – IEEE Women in Engineering
+
 
 Your **VMSB UTU logo is already in place** at
 `src/assets/logos/vmsbutu-logo.png` and wired up correctly.
