@@ -1,0 +1,105 @@
+// Sourced from https://nielit.ac.in/upwiecon2026/starProject.php
+
+export const starProject = {
+  eyebrow: 'InnovateHer-2026',
+  title: 'STAR Project Competition - Empowering Girls Through Innovation for a Sustainable Future',
+  subtitle: 'Hosted during UPWIECON 2026 | 20 November 2026 | Greater Noida, India',
+  about: [
+    '"InnovateHer-2026" is a STEM innovation competition organized under the IEEE Student-Teacher and Research Engineer/Scientist (STAR) Program, aligned with the IEEE UP Section WiE Affinity Group\'s mission to inspire the next generation of girls in STEM.',
+    'This unique initiative provides a platform for schoolgirls from Uttar Pradesh and Uttarakhand to showcase their creativity and problem-solving abilities through STEM-based projects focused on the United Nations Sustainable Development Goals (UN SDGs).',
+  ],
+  objectives: [
+    { title: "Promote Girls' Participation", body: 'Engage girls in real-world problem-solving activities through STEM education and practical applications.' },
+    { title: 'UN SDG Alignment', body: 'Encourage development of STEM-based projects that address key UN Sustainable Development Goals.' },
+  ],
+  sdgFocus: [
+    { number: 3, title: 'Good Health and Well-being', body: 'Projects promoting health tech, hygiene, mental health, or well-being.' },
+    { number: 4, title: 'Quality Education', body: 'Ideas to improve learning accessibility, inclusive education, or e-learning tools.' },
+    { number: 6, title: 'Clean Water and Sanitation', body: 'Innovations for water purification, waste reduction, and hygiene solutions.' },
+    { number: 7, title: 'Affordable and Clean Energy', body: 'Projects focused on renewable energy, energy-saving, or clean tech.' },
+    { number: 11, title: 'Sustainable Cities and Communities', body: 'Ideas related to smart cities, mobility, safety, or green infrastructure.' },
+    { number: 12, title: 'Responsible Consumption and Production', body: 'Projects encouraging recycling, upcycling, or sustainable practices.' },
+    { number: 13, title: 'Climate Action', body: 'Technologies or campaigns addressing climate change and environmental issues.' },
+  ],
+  participants: {
+    who: 'Girls from Classes 8–12 (Government and Private Schools in UP & Uttarakhand)',
+    categories: ['Junior Group: Classes 8–10', 'Senior Group: Classes 11–12'],
+    team: [
+      'Team Size: 2–4 girl students + 1 mentor',
+      'Mentor: Science/Math/Tech Teacher',
+      'Entry Limit: 1 team per school',
+      "Submission: Via school principal's/teacher's official email only",
+    ],
+  },
+  stage1: {
+    title: 'Stage 1: Registration & Project Submission (Pre-Screening)',
+    registrationRequirements: [
+      'Team name',
+      'Project title',
+      'SDG Alignment',
+      'School details',
+      'Team member details (name, class, and ID card)',
+      'Mentor details along with ID Proof',
+      'Recommendation letter from School Principal',
+    ],
+    submissionGuidelines: [
+      '5-minute video + project report',
+      'Clearly define the problem and related SDG(s)',
+      'Explain the solution/model/project',
+      'Include visual demonstration of prototype',
+      'Highlight roles of each team member',
+    ],
+    deadline: 'September 30th, 2026',
+    registerUrl: 'https://forms.gle/fKHJ2nNhu3UEWxvRA',
+    recommendationLetterUrl: 'https://nielit.ac.in/upwiecon2026/Recommendation.docx',
+    evaluationCriteria: [
+      'Alignment with UN SDGs',
+      'Innovation and originality',
+      'Relevance and impact',
+      'Scientific method and execution',
+      'Clarity and presentation',
+    ],
+    juryNote: "The decision of the jury regarding the evaluation and selection of projects shall be final and binding.",
+  },
+  stage2: {
+    title: 'Stage 2: Final Presentation @ UPWIECON 2026',
+    points: [
+      'Top 3 teams from each category will be selected for the final round',
+      'Teams will display and present their projects at UPWIECON2026 on 20 November 2026',
+      '1 team from each category will be selected as winner',
+    ],
+    venue: 'India Expo Centre & Mart, Greater Noida, Uttar Pradesh, India',
+  },
+  timeline: [
+    { date: '15th July 2026', title: 'Proposal Launch', body: 'Official announcement and call for participation' },
+    { date: '30th July 2026', title: 'School Outreach & Registrations', body: 'Active outreach to schools and registration period begins' },
+    { date: '30th September 2026', title: 'Video Submissions Deadline', body: 'Final deadline for Stage 1 submissions' },
+    { date: '25th October 2026', title: 'Jury Evaluation & Selection', body: 'Expert panel evaluates and selects finalists' },
+    { date: '1st November 2026', title: 'Finalist Announcement', body: 'Selected teams are notified and announced' },
+    { date: '20th November 2026', title: 'Project Display at UPWIECON2026', body: 'Final presentations and winner selection' },
+  ],
+  awards: {
+    finalistTeams: ['Certificates of Excellence', 'IEEE-branded merchandise', 'Trophy', 'Interaction with Women Engineers & IEEE Professionals'],
+    winningRewards: [
+      { place: '1st', amount: '₹10,000' },
+      { place: '2nd', amount: '₹8,000' },
+      { place: '3rd', amount: '₹5,000' },
+    ],
+    mentors: ['Certificate of Appreciation', 'Appreciation letter to School Principal'],
+    allParticipants: ['E-certificates for participation', 'Social media acknowledgement on IEEE UP Section WiE Affinity Group'],
+  },
+  collaborators: [
+    { title: 'IEEE Members & Reviewers', body: 'IEEE TryEngineering STEM Grant Reviewers & IEEE UP Section Members to assist in outreach, evaluation, and mentorship.', cta: { label: 'Join as Evaluator', url: 'https://forms.gle/JHZwNnNvBq4PWvmC7' } },
+    { title: 'School Authorities', body: 'Encourage participation and mentor nominations from your institution.' },
+    { title: 'Sponsors', body: 'Support travel, prizes, and logistics for finalists to make this event successful.' },
+  ],
+  contacts: [
+    { name: 'Dr. Suman Avdhesh Yadav', email: 'suman.avdheshyadav@gmail.com', phone: '+91 99107 19256' },
+    { name: 'Dr. Smita Sharma', email: 'sc-academics@nielit.gov.in', phone: '+91 9650339961' },
+    { name: 'Ms. Ishu Chaudhary', email: 'krishugupta1820@gmail.com', phone: '+91 8383854094' },
+    { name: 'Dr. Suman Lata Dhar', email: 'smn_bhat@yahoo.co.in', phone: '+91 9871252413' },
+    { name: 'Dr. Anupama Sharma', email: 'sharmaanupama@akgec.ac.in', phone: '+91 9868450322' },
+  ],
+  registerTeamUrl: 'https://forms.gle/fKHJ2nNhu3UEWxvRA',
+  becomeEvaluatorUrl: 'https://forms.gle/JHZwNnNvBq4PWvmC7',
+}
