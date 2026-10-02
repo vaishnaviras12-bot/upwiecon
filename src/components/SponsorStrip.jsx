@@ -1,25 +1,9 @@
-import Msbte from '../assets/logos/sponsors/Msbte.jpg'
-import Anrf from '../assets/logos/sponsors/anrf.jpg'
-import Powergrid from '../assets/logos/sponsors/powergrid.jpg'
-import Infineon from '../assets/logos/sponsors/infineon.jpg'
-
+// as Sponsors are not decided
 const sponsors = [
-  {
-    name: 'MSBTE',
-    logo: Msbte,
-  },
-  {
-    name: 'ANRF',
-    logo: Anrf,
-  },
-  {
-    name: 'POWERGRID',
-    logo: Powergrid,
-  },
-  {
-    name: 'Infineon',
-    logo: Infineon,
-  },
+  { name: '', logo: null },
+  { name: '', logo: null },
+  { name: '', logo: null },
+  { name: '', logo: null },
 ]
 
 export default function SponsorStrip() {
@@ -35,23 +19,25 @@ export default function SponsorStrip() {
         {/* Sponsors - one row */}
         <div className="grid grid-cols-4 items-center gap-5 sm:gap-8 lg:gap-10">
 
-          {sponsors.map((sponsor) => (
+          {sponsors.map((sponsor, index) => (
             <div
-              key={sponsor.name}
+              key={sponsor.name || index}
               className="group flex min-h-[155px] flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_12px_35px_rgba(37,99,235,0.14)]"
             >
 
-              {/* Logo */}
+              {/* Logo space */}
               <div className="flex h-24 w-full items-center justify-center">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="max-h-24 max-w-[90%] object-contain transition-transform duration-300 group-hover:scale-105"
-                />
+                {sponsor.logo && (
+                  <img
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    className="max-h-24 max-w-[90%] object-contain transition-transform duration-300 group-hover:scale-105"
+                  />
+                )}
               </div>
 
-              {/* Name */}
-              <p className="mt-3 text-center text-sm font-bold tracking-wide text-slate-700">
+              {/* Name space */}
+              <p className="mt-3 min-h-[20px] text-center text-sm font-bold tracking-wide text-slate-700">
                 {sponsor.name}
               </p>
 

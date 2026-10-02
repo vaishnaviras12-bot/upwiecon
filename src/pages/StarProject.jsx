@@ -12,7 +12,7 @@ export default function StarProject() {
       <PageHero eyebrow={sp.eyebrow} title={sp.title} subtitle={sp.subtitle} />
 
       <section className="mx-auto max-w-8xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <SectionHeading eyebrow="About" title="InnovateHer-2026" />
+        <SectionHeading eyebrow="About" title="InnovateHer-2027" />
         <div className="mb-14 space-y-4 text-sm leading-relaxed text-navy-600 sm:text-base">
           {sp.about.map((p, i) => (
             <p key={i}>{p}</p>

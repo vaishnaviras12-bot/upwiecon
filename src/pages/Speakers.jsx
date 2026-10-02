@@ -8,7 +8,7 @@ export default function Speakers() {
   return (
     <PageLayout title="Speakers">
       <PageHero
-        eyebrow="UPWIECON 2026 | International Conference on Emerging Technologies"
+        eyebrow="UPWIECON 2027 | International Conference on Emerging Technologies"
         title="Speakers"
       />
 

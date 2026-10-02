@@ -32,7 +32,7 @@ export default function Home() {
               Ready to be part of UPWIECON 2027?
             </h3>
             <p className="mt-2 text-sm text-white/90 sm:text-base">
-              Submit your research or secure your seat at India Expo Centre & Mart, Greater Noida.
+              Submit your research or secure your seat at  AUDITORIUM , Govt.WIT
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">

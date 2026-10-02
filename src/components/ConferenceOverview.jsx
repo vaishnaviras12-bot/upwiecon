@@ -7,7 +7,7 @@ export default function ConferenceOverview() {
     <section className="mx-auto max-w-8xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
       <div className="grid gap-12 lg:grid-cols-5">
         <div className="lg:col-span-3">
-          <SectionHeading eyebrow="About the Conference" title="About UPWIECON 2026" />
+          <SectionHeading eyebrow="About the Conference" title="About UPWIECON 2027" />
           <div className="space-y-4 text-sm leading-relaxed text-navy-600 sm:text-base">
             {about.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
@@ -49,7 +49,7 @@ export default function ConferenceOverview() {
           <div className="mt-6 flex items-start gap-3 rounded-xl border border-gold-500/30 bg-gold-500/5 p-5">
             <Sparkles size={20} className="mt-0.5 shrink-0 text-gold-600" />
             <p className="text-sm text-navy-700">
-              Organized by <span className="font-semibold">NIELIT Noida, India</span> — the flagship
+              Organized by <span className="font-semibold">Govt. Women's Institute of Technology, UTU, Dehradun, Uttarakhand</span> — the flagship
               conference of the IEEE UP Section WIE Affinity Group.
             </p>
           </div>

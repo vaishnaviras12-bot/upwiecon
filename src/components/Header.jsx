@@ -34,27 +34,21 @@ export default function Header() {
           : 'border-white/15 bg-black/25 backdrop-blur-md'
       }`}
     >
-
-      {/* ================================================== */}
       {/* LOGO ROW */}
-      {/* ================================================== */}
-      <div className="flex h-[82px] items-center justify-center border-b border-white/10 sm:h-[88px]">
+      <div className="flex h-[82px] items-center border-b border-white/10 sm:h-[88px]">
         <NavLink
           to="/"
           aria-label="UPWIECON home"
-          className="flex items-center justify-center"
+          className="flex w-full items-center"
         >
           <LogoGroup />
         </NavLink>
       </div>
 
-
-      {/* ================================================== */}
       {/* DESKTOP NAVIGATION */}
-      {/* ================================================== */}
       <div className="hidden xl:block">
         <nav
-          className="mx-auto flex max-w-[1750px] flex-wrap items-center justify-center gap-x-1 gap-y-1 px-4 py-2"
+          className="mx-auto flex max-w-[1750px] flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 pb-3 pt-6"
           aria-label="Primary"
         >
           {nav.map((item) => (
@@ -62,7 +56,7 @@ export default function Header() {
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `rounded-md px-2 py-1.5 text-[10px] font-semibold uppercase tracking-wide transition-all duration-200 2xl:px-2.5 2xl:text-[11px] ${
+                `rounded-md px-3 py-2 text-[13px] font-semibold uppercase tracking-wide transition-all duration-200 2xl:px-4 2xl:text-[15px] ${
                   isActive
                     ? 'bg-white/10 text-white'
                     : 'text-white/80 hover:bg-white/10 hover:text-white'
@@ -75,12 +69,8 @@ export default function Header() {
         </nav>
       </div>
 
-
-      {/* ================================================== */}
       {/* TABLET / MOBILE NAVIGATION */}
-      {/* ================================================== */}
       <div className="flex h-[50px] items-center justify-between px-4 xl:hidden">
-
         <NavLink
           to="/"
           aria-label="UPWIECON home"
@@ -98,13 +88,9 @@ export default function Header() {
         >
           <Menu size={26} />
         </button>
-
       </div>
 
-
-      {/* ================================================== */}
       {/* MOBILE MENU */}
-      {/* ================================================== */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -125,10 +111,8 @@ export default function Header() {
               transition={{ type: 'tween', duration: 0.25 }}
               onClick={(e) => e.stopPropagation()}
             >
-
               {/* Mobile Header */}
               <div className="flex items-center justify-between border-b border-navy-100 p-4">
-
                 <LogoGroup compact />
 
                 <button
@@ -139,9 +123,7 @@ export default function Header() {
                 >
                   <X size={24} />
                 </button>
-
               </div>
-
 
               {/* Mobile Navigation */}
               <nav
@@ -163,19 +145,14 @@ export default function Header() {
                   >
                     {item.label}
 
-                    <ChevronRight
-                      size={16}
-                      className="text-navy-400"
-                    />
+                    <ChevronRight size={16} className="text-navy-400" />
                   </NavLink>
                 ))}
               </nav>
-
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-
     </header>
   )
 }

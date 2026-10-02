@@ -9,8 +9,7 @@ import Schedule from './pages/Schedule'
 import Registration from './pages/Registration'
 import Submission from './pages/Submission'
 import Contact from './pages/Contact'
-import StarProject from './pages/StarProject'
-import SustainAThon from './pages/SustainAThon'
+
 
 export default function App() {
   return (
@@ -25,8 +24,7 @@ export default function App() {
       <Route path="/registration" element={<Registration />} />
       <Route path="/submission" element={<Submission />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/star-project" element={<StarProject />} />
-      <Route path="/sustain-a-thon" element={<SustainAThon />} />
+      
       <Route
         path="*"
         element={

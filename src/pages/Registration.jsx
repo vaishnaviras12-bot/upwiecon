@@ -34,10 +34,10 @@ export default function Registration() {
                 <th rowSpan={2} className="px-4 py-3 font-semibold align-bottom">Category</th>
                 <th rowSpan={2} className="px-4 py-3 font-semibold align-bottom">Membership</th>
                 <th colSpan={2} className="px-4 py-2 text-center font-semibold border-l border-white/10">
-                  Early Bird (Before 1 Sep 2026)
+                  Early Bird (Before 1 Sep 2027)
                 </th>
                 <th colSpan={2} className="px-4 py-2 text-center font-semibold border-l border-white/10">
-                  Registration after 1 Sep 2026
+                  Registration after 1 Sep 2027
                 </th>
               </tr>
               <tr className="bg-navy-800 text-white text-xs">

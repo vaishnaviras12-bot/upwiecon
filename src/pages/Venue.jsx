@@ -56,7 +56,7 @@ export default function Venue() {
         <SectionHeading eyebrow="Find Us" title="Location Map" />
         <div className="overflow-hidden rounded-xl border border-navy-100 shadow-card">
           <iframe
-            title="India Expo Centre & Mart location map"
+            title=" AUDITORIUM"
             src={venue.mapEmbed}
             width="100%"
             height="420"

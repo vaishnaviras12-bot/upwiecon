@@ -8,7 +8,7 @@ import { sustainAThon as sa } from '../data/sustainAThon'
 
 export default function SustainAThon() {
   return (
-    <PageLayout title="Sustain-a-thon 2026">
+    <PageLayout title="Sustain-a-thon 2027">
       <PageHero eyebrow={sa.eyebrow} title={sa.title} subtitle={sa.subtitle} />
 
       <section className="mx-auto max-w-8xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">

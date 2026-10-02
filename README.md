@@ -1,6 +1,6 @@
 # UPWIECON 2027 — Redesigned Frontend
 
-A modern, premium redesign of the UPWIECON 2026 conference website
+A modern, premium redesign of the UPWIECON 2027 conference website
 (source of truth: https://nielit.ac.in/upwiecon2026/), rebuilt with
 React + Vite + Tailwind CSS. All conference content (dates, venue,
 tracks, committees, speakers, registration fees, etc.) is copied

@@ -1,13 +1,13 @@
 // Sourced from https://nielit.ac.in/upwiecon2026/sustainAThon.php
 
 export const sustainAThon = {
-  eyebrow: 'UPWIECON Sustain-a-thon 2026',
+  eyebrow: 'UPWIECON Sustain-a-thon 2027',
   title: 'Grand Challenge on Sustainable Innovation for Women',
-  subtitle: 'Hosted during UPWIECON 2026 | 20 November 2026 | Greater Noida, India',
+  subtitle: 'Hosted during UPWIECON 2027 | 20 November 2027 | Greater Noida, India',
   about: [
-    'The UPWIECON Sustain-a-thon 2026 is an innovation challenge designed to catalyse transformative solutions addressing the complex and interconnected challenges experienced by women across health, education, safety, economic participation, climate resilience, digital inclusion, and leadership in India.',
-    'Organized under IEEE Uttar Pradesh Section Women in Engineering International Conference on Electrical, Electronics, and Computer Engineering [UPWIECON 2026], the initiative provides an interdisciplinary platform where industry professionals, innovators, healthcare experts, entrepreneurs, policymakers, non-governmental organizations, and startups collaborate to conceptualize, prototype, and demonstrate solutions with measurable societal impact.',
-    'Unlike conventional hackathons that focus primarily on rapid software development, the UPWIECON Sustain-a-thon 2026 emphasizes research-driven innovation, systems thinking, and sustainable implementation. Participants are encouraged to develop scalable technological, organizational, policy, or business solutions that can contribute meaningfully to the achievement of the United Nations Sustainable Development Goals (SDGs).',
+    'The UPWIECON Sustain-a-thon 2027 is an innovation challenge designed to catalyse transformative solutions addressing the complex and interconnected challenges experienced by women across health, education, safety, economic participation, climate resilience, digital inclusion, and leadership in India.',
+    'Organized under IEEE Uttar Pradesh Section Women in Engineering International Conference on Electrical, Electronics, and Computer Engineering [UPWIECON 2027], the initiative provides an interdisciplinary platform where industry professionals, innovators, healthcare experts, entrepreneurs, policymakers, non-governmental organizations, and startups collaborate to conceptualize, prototype, and demonstrate solutions with measurable societal impact.',
+    'Unlike conventional hackathons that focus primarily on rapid software development, the UPWIECON Sustain-a-thon 2027 emphasizes research-driven innovation, systems thinking, and sustainable implementation. Participants are encouraged to develop scalable technological, organizational, policy, or business solutions that can contribute meaningfully to the achievement of the United Nations Sustainable Development Goals (SDGs).',
   ],
   eligibility: [
     { title: 'Working Women Professionals', body: 'Open exclusively to working women professionals from Industry or Academia.' },
@@ -79,14 +79,14 @@ export const sustainAThon = {
     { title: 'Silver Excellence Award', amount: '₹5,000/-' },
   ],
   awardsNote:
-    'The Top 3 participants will be invited to present their innovative ideas at the India Expo Centre & Mart, Greater Noida, Uttar Pradesh, during the 2nd IEEE Uttar Pradesh Section Women in Engineering International Conference (UPWIECON-2026) on 20 November 2026.',
+    'The Top 3 participants will be invited to present their innovative ideas at the India Expo Centre & Mart, Greater Noida, Uttar Pradesh, during the 3rd IEEE Uttar Pradesh Section Women in Engineering International Conference (UPWIECON-2027) on 20 November 2027.',
   timeline: [
-    { date: '15th July 2026', title: 'Proposal Launch' },
-    { date: '30th July 2026', title: 'Outreach & Registrations' },
-    { date: '30th September 2026', title: 'Video Submissions Deadline' },
-    { date: '25th October 2026', title: 'Jury Evaluation & Selection Deadline' },
-    { date: '1st November 2026', title: 'Finalist Announcement' },
-    { date: '20th November 2026', title: 'Project Display at UPWIECON2026' },
+    { date: '15th July 2027', title: 'Proposal Launch' },
+    { date: '30th July 2027', title: 'Outreach & Registrations' },
+    { date: '30th September 2027', title: 'Video Submissions Deadline' },
+    { date: '25th October 2027', title: 'Jury Evaluation & Selection Deadline' },
+    { date: '1st November 2027', title: 'Finalist Announcement' },
+    { date: '20th November 2027', title: 'Project Display at UPWIECON2026' },
   ],
   contacts: [
     { name: 'Dr. Suman Avdhesh Yadav', org: 'IILM University Greater Noida', email: 'suman.avdheshyadav@gmail.com', phone: '+91 9910719256' },

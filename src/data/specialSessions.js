@@ -5,7 +5,7 @@ export const specialSessions = [
     number: '01',
     title: 'Advanced approaches in Communication, Computer Sciences and Electrical Engineering',
     chairs: [
-      { name: 'Dr. Smita Sharma', org: 'Sr. Consultant Academics, NIELIT Noida, India' },
+      { name: 'Dr. Smita Sharma', org: 'Sr. Consultant Academics, , India' },
       { name: 'Dr. Suman Avdhesh Yadav', org: 'IILM University, Greater Noida, India' },
       { name: 'Dr. S Vikram Singh', org: 'Deputy Director, Amity University Greater Noida, India' },
     ],

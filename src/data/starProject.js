@@ -1,11 +1,11 @@
 // Sourced from https://nielit.ac.in/upwiecon2026/starProject.php
 
 export const starProject = {
-  eyebrow: 'InnovateHer-2026',
+  eyebrow: 'InnovateHer-2027',
   title: 'STAR Project Competition - Empowering Girls Through Innovation for a Sustainable Future',
-  subtitle: 'Hosted during UPWIECON 2026 | 20 November 2026 | Greater Noida, India',
+  subtitle: 'Hosted during UPWIECON 2027 | 20 November 2027 | Greater Noida, India',
   about: [
-    '"InnovateHer-2026" is a STEM innovation competition organized under the IEEE Student-Teacher and Research Engineer/Scientist (STAR) Program, aligned with the IEEE UP Section WiE Affinity Group\'s mission to inspire the next generation of girls in STEM.',
+    '"InnovateHer-2027" is a STEM innovation competition organized under the IEEE Student-Teacher and Research Engineer/Scientist (STAR) Program, aligned with the IEEE UP Section WiE Affinity Group\'s mission to inspire the next generation of girls in STEM.',
     'This unique initiative provides a platform for schoolgirls from Uttar Pradesh and Uttarakhand to showcase their creativity and problem-solving abilities through STEM-based projects focused on the United Nations Sustainable Development Goals (UN SDGs).',
   ],
   objectives: [
@@ -49,7 +49,7 @@ export const starProject = {
       'Include visual demonstration of prototype',
       'Highlight roles of each team member',
     ],
-    deadline: 'September 30th, 2026',
+    deadline: 'September 30th, 2027',
     registerUrl: 'https://forms.gle/fKHJ2nNhu3UEWxvRA',
     recommendationLetterUrl: 'https://nielit.ac.in/upwiecon2026/Recommendation.docx',
     evaluationCriteria: [
@@ -62,27 +62,27 @@ export const starProject = {
     juryNote: "The decision of the jury regarding the evaluation and selection of projects shall be final and binding.",
   },
   stage2: {
-    title: 'Stage 2: Final Presentation @ UPWIECON 2026',
+    title: 'Stage 2: Final Presentation @ UPWIECON 2027',
     points: [
       'Top 3 teams from each category will be selected for the final round',
-      'Teams will display and present their projects at UPWIECON2026 on 20 November 2026',
+      'Teams will display and present their projects at UPWIECON2026 on 20 November 2027',
       '1 team from each category will be selected as winner',
     ],
     venue: 'India Expo Centre & Mart, Greater Noida, Uttar Pradesh, India',
   },
   timeline: [
-    { date: '15th July 2026', title: 'Proposal Launch', body: 'Official announcement and call for participation' },
-    { date: '30th July 2026', title: 'School Outreach & Registrations', body: 'Active outreach to schools and registration period begins' },
-    { date: '30th September 2026', title: 'Video Submissions Deadline', body: 'Final deadline for Stage 1 submissions' },
-    { date: '25th October 2026', title: 'Jury Evaluation & Selection', body: 'Expert panel evaluates and selects finalists' },
-    { date: '1st November 2026', title: 'Finalist Announcement', body: 'Selected teams are notified and announced' },
-    { date: '20th November 2026', title: 'Project Display at UPWIECON2026', body: 'Final presentations and winner selection' },
+    { date: '15th July 2027', title: 'Proposal Launch', body: 'Official announcement and call for participation' },
+    { date: '30th July 2027', title: 'School Outreach & Registrations', body: 'Active outreach to schools and registration period begins' },
+    { date: '30th September 2027', title: 'Video Submissions Deadline', body: 'Final deadline for Stage 1 submissions' },
+    { date: '25th October 2027', title: 'Jury Evaluation & Selection', body: 'Expert panel evaluates and selects finalists' },
+    { date: '1st November 2027', title: 'Finalist Announcement', body: 'Selected teams are notified and announced' },
+    { date: '11th-12th September 2027', title: 'Project Display at UPWIECON2026', body: 'Final presentations and winner selection' },
   ],
   awards: {
     finalistTeams: ['Certificates of Excellence', 'IEEE-branded merchandise', 'Trophy', 'Interaction with Women Engineers & IEEE Professionals'],
     winningRewards: [
       { place: '1st', amount: '₹10,000' },
-      { place: '2nd', amount: '₹8,000' },
+      { place: '3rd', amount: '₹8,000' },
       { place: '3rd', amount: '₹5,000' },
     ],
     mentors: ['Certificate of Appreciation', 'Appreciation letter to School Principal'],

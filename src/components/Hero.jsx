@@ -3,6 +3,17 @@ import { CalendarDays, ArrowRight, MapPin } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { hero, venue } from '../data/conference'
 
+// Bubble-up effect: line ko touch karne par halka bada + upar uthta hai
+const bubble = {
+  scale: 1.04,
+  y: -4,
+  transition: { type: 'spring', stiffness: 300, damping: 18 },
+}
+
+// Highlight glass background (hover par dikhega)
+const bubbleStyle =
+  'origin-left -mx-3 cursor-default rounded-xl px-3 py-1.5 transition-colors duration-300 hover:bg-white/10 hover:shadow-lg hover:backdrop-blur-md'
+
 export default function Hero() {
   return (
     <>
@@ -41,79 +52,76 @@ export default function Hero() {
         />
 
         {/* Hero Content */}
-        <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-start px-6 pb-20 pt-[165px] sm:px-10 sm:pt-[175px] lg:px-12 lg:pt-[175px]">
-          <div className="max-w-3xl">
+        <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-center px-6 pb-32 pt-[130px] sm:px-10 sm:pt-[130px] lg:px-12 lg:pt-[130px]">
+          <div className="flex max-w-4xl flex-col gap-6">
 
-            {/* Conference label */}
+            {/* Conference label (top date badge) */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+              whileHover={bubble}
               transition={{ duration: 0.6 }}
-              className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-3 py-1.5 text-xs font-medium backdrop-blur-md"
+              className="inline-flex cursor-default items-center gap-3 self-start rounded-full border border-white/30 bg-white/10 px-6 py-3 text-lg font-black backdrop-blur-md transition-colors duration-300 hover:bg-white/20 sm:text-xl"
             >
-              <span className="h-2 w-2 rounded-full bg-green-400" />
+              <span className="h-3 w-3 rounded-full bg-green-400" />
               {hero.dateLine}
             </motion.div>
 
-            {/* Main title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-3xl font-extrabold leading-[0.95] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl"
-            >
-              UPWIECON
-              <span className="block text-white/90">
-                2027
-              </span>
-            </motion.h1>
-
-            {/* Subtitle */}
+            {/* Subtitle (3rd IEEE Uttar Pradesh Section...) */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+              whileHover={bubble}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 max-w-2xl text-lg font-medium leading-relaxed text-white/90 sm:text-xl"
+              className={`max-w-3xl text-base font-semibold leading-relaxed text-white/90 sm:text-lg lg:text-xl ${bubbleStyle}`}
             >
               {hero.subtitle}
             </motion.p>
 
-            {/* Tagline */}
+            {/* Tagline (International Conference on...) */}
             {hero.tagline && (
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+                whileHover={bubble}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="mt-3 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base"
+                className={`max-w-3xl text-base font-medium leading-relaxed text-white/90 sm:text-lg ${bubbleStyle}`}
               >
                 {hero.tagline}
               </motion.p>
             )}
 
             {/* Date + Venue */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
-              className="mt-7 flex flex-col gap-3 text-sm text-white/85 sm:flex-row sm:flex-wrap sm:gap-6"
-            >
-              <div className="flex items-center gap-2">
-                <CalendarDays className="h-5 w-5" />
-                <span>{hero.dateLine}</span>
-              </div>
+            <div className="flex flex-col gap-3">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                whileHover={bubble}
+                transition={{ duration: 0.6, delay: 0.35 }}
+               className={`flex items-center gap-3 text-lg font-black text-white sm:text-xl ${bubbleStyle} self-start`}
+>
+  <CalendarDays className="h-5 w-5 shrink-0 sm:h-6 sm:w-6" />
+  <span>{hero.dateLine}</span>
+</motion.div>
 
-              <div className="flex items-center gap-2">
-                <MapPin className="h-5 w-5" />
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                whileHover={bubble}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className={`flex items-center gap-2 text-sm text-white/90 sm:text-base ${bubbleStyle} self-start`}
+              >
+                <MapPin className="h-5 w-5 shrink-0" />
                 <span>{venue.address}</span>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
 
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.45 }}
-              className="mt-9 flex flex-col gap-3 sm:flex-row"
+              className="flex flex-col gap-3 pt-15 sm:flex-row"
             >
               {hero.ctas?.map((cta, index) => (
                 <NavLink

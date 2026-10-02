@@ -9,7 +9,7 @@ export default function PageLayout({ children, title }) {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
-    if (title) document.title = `${title} | UPWIECON 2026`
+    if (title) document.title = `${title} | UPWIECON 2027`
   }, [location.pathname, title])
 
   return (
