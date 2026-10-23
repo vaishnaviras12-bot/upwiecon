@@ -9,6 +9,7 @@ import Schedule from './pages/Schedule'
 import Registration from './pages/Registration'
 import Submission from './pages/Submission'
 import Contact from './pages/Contact'
+import TouristPlaces from './pages/TouristPlaces'
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       <Route path="/schedule" element={<Schedule />} />
       <Route path="/registration" element={<Registration />} />
       <Route path="/submission" element={<Submission />} />
+      <Route path="/tourist-places" element={<TouristPlaces />} />
       <Route path="/contact" element={<Contact />} />
       
       <Route

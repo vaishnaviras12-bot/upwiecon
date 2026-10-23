@@ -1,9 +1,9 @@
 // Sourced from https://nielit.ac.in/upwiecon2026/committee.php
 
 export const chiefPatrons = [
-  { name: 'Shri. S. Krishnan', org: 'Secretary, Ministry of Electronics & Information Technology (MeitY), India' },
+  { name: 'Dr. Tripta Thakur', org: 'Vice Chancellor, Veer Madho Singh Bhandari Uttarakhand Technical University, Dehradun' },
+  { name: 'Prof. (Dr.) Shree Niwas Singh', org: 'Director, ABV-IIITM, Gwalior, India' },
   { name: 'Prof. (Dr.) M M Tripathi', org: 'Director General, NIELIT, India' },
-  { name: 'Prof. (Dr.) Sri Niwas Singh', org: 'Director, ABV-IIITM, Gwalior, India' },
 ]
 
 export const patrons = [

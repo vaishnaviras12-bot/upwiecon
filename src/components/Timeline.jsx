@@ -3,7 +3,7 @@ import { CheckCircle2 } from 'lucide-react'
 
 export default function Timeline({ items }) {
   return (
-    <ol className="relative border-l-2 border-navy-100 pl-6 sm:mx-auto sm:max-w-2xl">
+    <ol className="relative border-l-2 border-slate-200 dark:border-navy-700 pl-6 sm:mx-auto sm:max-w-2xl">
       {items.map((item, idx) => (
         <motion.li
           key={item.label}
@@ -14,16 +14,16 @@ export default function Timeline({ items }) {
           className="mb-8 last:mb-0"
         >
           <span
-            className={`absolute -left-[11px] flex h-5 w-5 items-center justify-center rounded-full ring-4 ring-white ${
-              item.isFinal ? 'bg-gold-500' : 'bg-navy-600'
+            className={`absolute -left-[11px] flex h-5 w-5 items-center justify-center rounded-full ring-4 ring-white dark:ring-navy-950 ${
+              item.isFinal ? 'bg-gold-500' : 'bg-navy-600 dark:bg-navy-400'
             }`}
           >
             {item.isFinal && <CheckCircle2 size={14} className="text-white" />}
           </span>
-          <p className={`text-sm font-semibold uppercase tracking-wide ${item.isFinal ? 'text-gold-600' : 'text-navy-500'}`}>
+          <p className={`text-sm font-semibold uppercase tracking-wide ${item.isFinal ? 'text-gold-600 dark:text-gold-400' : 'text-accent-600 dark:text-accent-400'}`}>
             {item.label}
           </p>
-          <p className="font-display text-lg font-bold text-navy-900">{item.date}</p>
+          <p className="font-display text-lg font-bold text-navy-900 dark:text-slate-100">{item.date}</p>
         </motion.li>
       ))}
     </ol>

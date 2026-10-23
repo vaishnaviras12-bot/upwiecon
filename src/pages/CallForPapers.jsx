@@ -10,7 +10,7 @@ export default function CallForPapers() {
     <PageLayout title="Call for Papers">
       <PageHero eyebrow={callForPapersMeta.eyebrow} title="Call for Papers" subtitle={callForPapersMeta.recordNumber} />
 
-      <section className="mx-auto max-w-8xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="mx-auto max-w-8xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading eyebrow="Tracks" title="Call for Papers" subtitle={callForPapersMeta.intro} />
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {tracks.map((t) => (
@@ -19,7 +19,7 @@ export default function CallForPapers() {
             </Card>
           ))}
         </div>
-        <p className="mt-10 text-center text-sm text-navy-500">
+        <p className="mt-10 text-center text-sm text-navy-500 dark:text-slate-400">
           © 2027 UPWIECON 2027. All rights reserved. | Submit your papers and be part of cutting-edge
           research!
         </p>

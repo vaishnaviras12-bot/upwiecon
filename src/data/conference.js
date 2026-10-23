@@ -11,8 +11,8 @@ export const nav = [
   { label: 'Schedule', path: '/schedule' },
   { label: 'Registration', path: '/registration' },
   { label: 'Call for Paper', path: '/call-for-paper' },
+  { label: 'Tourist Places', path: '/tourist-places' },
   { label: 'Contact Us', path: '/contact' },
-  
 ]
 
 export const hero = {
@@ -50,13 +50,18 @@ export const about = {
   ],
   stats: [
     { value: '3rd', label: 'IEEE UP Section WIE Conference' },
-    { value: 'Global', label: 'Research Platform' },
+    { value: '1992', label: 'Section Established' },
   ],
   ieeeUpSection: {
     established: '1992',
-    body: [
-      
-    ],
+    officialUrl: 'https://www.ieeeup.org/',
+    heading: 'IEEE Uttar Pradesh Section',
+    summary:
+      'The IEEE Uttar Pradesh (UP) Section was formally approved on May 11, 1992, having originated as a subsection under the IEEE Delhi Section in 1970. Operating within IEEE Region 10 (Asia-Pacific) and represented under the IEEE India Council, the Section covers the states of Uttar Pradesh and Uttarakhand.',
+    role:
+      'The Section plays a pivotal role in advancing technological innovation, academic excellence, and professional growth across the region. It actively supports hundreds of student branches, faculty members, researchers, and industry professionals at premier academic institutions including IITs, IIITs, NITs, and leading technical universities.',
+    activities:
+      'Key activities include organizing flagship international conferences such as UPCON and UPWIECON, hosting domain-specific workshops, technical symposiums, and promoting STEM education. The Section champions diversity, inclusion, and mentorship through active affinity groups including IEEE Women in Engineering (WIE) and IEEE Young Professionals (YP).',
   },
 }
 

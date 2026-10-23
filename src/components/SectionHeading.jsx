@@ -12,7 +12,7 @@ export default function SectionHeading({ eyebrow, title, subtitle, align = 'left
       {eyebrow && (
         <p
           className={`mb-2 text-xs font-semibold uppercase tracking-[0.2em] ${
-            light ? 'text-gold-400' : 'text-accent-600'
+            light ? 'text-gold-400' : 'text-accent-600 dark:text-gold-400'
           }`}
         >
           {eyebrow}
@@ -20,13 +20,13 @@ export default function SectionHeading({ eyebrow, title, subtitle, align = 'left
       )}
       <h2
         className={`font-display text-2xl font-bold leading-tight sm:text-3xl md:text-4xl ${
-          light ? 'text-white' : 'text-navy-900'
+          light ? 'text-white' : 'text-navy-900 dark:text-slate-100'
         }`}
       >
         {title}
       </h2>
       {subtitle && (
-        <p className={`mt-3 text-base ${light ? 'text-navy-100' : 'text-navy-600'}`}>{subtitle}</p>
+        <p className={`mt-3 text-base ${light ? 'text-navy-100' : 'text-navy-600 dark:text-slate-300'}`}>{subtitle}</p>
       )}
     </motion.div>
   )

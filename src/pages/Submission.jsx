@@ -10,13 +10,13 @@ export default function Submission() {
     <PageLayout title="Paper Submission">
       <PageHero eyebrow="Author Guidelines" title="Paper Submission" subtitle={submission.intro} />
 
-      <section className="mx-auto max-w-8xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mb-14 flex flex-col items-center gap-4 rounded-2xl border border-navy-100 bg-navy-50/60 p-8 text-center sm:flex-row sm:justify-between sm:text-left">
+      <section className="mx-auto max-w-8xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mb-14 flex flex-col items-center gap-4 rounded-2xl border border-slate-200 dark:border-navy-700 bg-navy-50/60 dark:bg-navy-900/60 p-6 sm:p-8 text-center sm:flex-row sm:justify-between sm:text-left shadow-sm">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-600">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-600 dark:text-gold-400">
               Microsoft CMT Submission Portal
             </p>
-            <h2 className="mt-1 font-display text-xl font-bold text-navy-900">
+            <h2 className="mt-1 font-display text-xl font-bold text-navy-900 dark:text-slate-100">
               Submit your manuscript electronically
             </h2>
           </div>
@@ -24,7 +24,7 @@ export default function Submission() {
             href={submission.cmtUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-soft hover:bg-accent-700"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-md hover:bg-accent-700"
           >
             Submit via CMT <ExternalLink size={16} />
           </a>
@@ -33,9 +33,9 @@ export default function Submission() {
         <SectionHeading eyebrow="Formatting" title="Submission Requirements" />
         <div className="mb-14 grid grid-cols-1 gap-3 sm:grid-cols-2">
           {submission.requirements.map((r, i) => (
-            <div key={i} className="flex items-start gap-2 rounded-lg border border-navy-100 bg-white p-4 text-sm text-navy-600 shadow-card">
-              <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-accent-600" />
-              {r}
+            <div key={i} className="flex items-start gap-2.5 rounded-lg border border-slate-200 dark:border-navy-700 bg-white dark:bg-navy-900 p-4 text-sm text-navy-700 dark:text-slate-300 shadow-sm">
+              <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-accent-600 dark:text-gold-400" />
+              <span>{r}</span>
             </div>
           ))}
         </div>
@@ -44,7 +44,7 @@ export default function Submission() {
             href={submission.templateUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-navy-200 px-6 py-2.5 text-sm font-semibold text-navy-700 hover:bg-navy-50"
+            className="inline-flex items-center gap-2 rounded-full border border-navy-200 dark:border-navy-700 bg-white dark:bg-navy-800 px-6 py-2.5 text-sm font-semibold text-navy-800 dark:text-slate-200 hover:bg-navy-50 dark:hover:bg-navy-700"
           >
             <FileText size={16} /> Download IEEE Conference Template
           </a>
@@ -52,10 +52,10 @@ export default function Submission() {
 
         <SectionHeading eyebrow="Scope" title="Note to Authors" />
         <div className="mb-14 space-y-4">
-          <p className="rounded-lg border border-navy-100 bg-white p-5 text-sm leading-relaxed text-navy-600 shadow-card">
+          <p className="rounded-lg border border-slate-200 dark:border-navy-700 bg-white dark:bg-navy-900 p-5 text-sm leading-relaxed text-navy-700 dark:text-slate-300 shadow-sm">
             {submission.noteToAuthors}
           </p>
-          <p className="rounded-lg border border-accent-200 bg-accent-50 p-5 text-sm leading-relaxed text-navy-700">
+          <p className="rounded-lg border border-accent-200 dark:border-accent-900 bg-accent-50 dark:bg-accent-950/40 p-5 text-sm leading-relaxed text-navy-800 dark:text-slate-200">
             {submission.outOfScope}
           </p>
         </div>
