@@ -3,6 +3,7 @@
 
 export const nav = [
   { label: 'Home', path: '/' },
+  { label: 'History', path: '/history' },
   { label: 'Submission', path: '/submission' },
   { label: 'Special Session', path: '/special-session' },
   { label: 'Speakers', path: '/speakers' },
@@ -16,7 +17,7 @@ export const nav = [
 ]
 
 export const hero = {
-  dateLine: '11-12-September 2027',
+  dateLine: '11–12 September 2027',
   title: 'UPWIECON 2027',
   subtitle: '3rd IEEE Uttar Pradesh Section Women in Engineering',
   tagline: 'International Conference on Electrical Electronics and Computer Engineering',
@@ -103,9 +104,9 @@ export const importantDates = [
   { label: 'Rolling Acceptance (Round 4)', date: '' },
   { label: 'Final Submission Deadline', date: '' },
   { label: 'Notice of Acceptance', date: '' },
-  { label: 'Early Bird Registration', date: '' },
+  { label: 'Early Bird Registration', date: '15 August 2027' },
   { label: 'Camera Ready Submission', date: '' },
-  { label: 'Conference Date', date: '11th-12th September 2027', isFinal: true },
+  { label: 'Conference Date', date: '11–12 September 2027', isFinal: true },
 ]
 
 export const importantDatesNote =
@@ -113,7 +114,8 @@ export const importantDatesNote =
 
 export const venue = {
   name: 'AUDITORIUM',
-  address: "Govt. Women's Institute of Technology, UTU, Chandanwadi, Prem Nagar, Sudhowala, Dehradun (Uttarakhand) - 248001",
+  hostInstitution: "Government Women Institute of Technology (GWIT), Dehradun",
+  address: "Govt. Women's Institute of Technology (GWIT), UTU Campus, Chandanwadi, Prem Nagar, Sudhowala, Dehradun (Uttarakhand) - 248007",
 
   phone: '(+91)  / ',
   mapEmbed:
@@ -139,8 +141,8 @@ export const venue = {
 }
 
 export const footerContact = {
-  email: 'ieeeconference@nielit.ac.in',
-  phones: ['(+91)', ''],
+  email: 'Krishnachandra.Mishra@gmail.com',
+  phones: ['+91 97204 01816'],
 }
 
 export const copyright = "Copyright © 2027 Govt. Women's Institute of Technology, UTU, Dehradun. All Rights Reserved."

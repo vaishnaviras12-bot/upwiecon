@@ -31,39 +31,39 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+      className={`sticky top-0 z-50 w-full bg-white transition-shadow duration-300 ${
         scrolled
-          ? 'bg-navy-900/95 dark:bg-navy-950/95 backdrop-blur-md shadow-lg border-b border-navy-700/60'
-          : 'bg-navy-900 dark:bg-navy-950 border-b border-navy-800'
+          ? 'shadow-md border-b border-slate-200'
+          : 'border-b border-slate-200'
       }`}
     >
-      {/* LOGO ROW */}
-      <div className="py-2.5 sm:py-3.5 border-b border-white/10">
+      {/* TOP HEADER ROW: LOGOS + TITLE + INSTITUTIONAL INFO */}
+      <div className="w-full bg-white border-b border-slate-100">
         <NavLink
           to="/"
-          aria-label="UPWIECON 2027 Home"
-          className="flex w-full items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 rounded"
+          aria-label="IEEE UPWIECON 2027 Home"
+          className="block w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#002855]"
         >
           <LogoGroup />
         </NavLink>
       </div>
 
-      {/* DESKTOP NAVIGATION BAR */}
-      <div className="hidden xl:block">
+      {/* DESKTOP NAVIGATION BAR (SINGLE CONTINUOUS HORIZONTAL LINE, NO WRAPPING) */}
+      <div className="hidden xl:block bg-white border-t border-slate-100/80">
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2"
+          className="mx-auto flex max-w-[1440px] items-center justify-between px-3 py-1.5"
           aria-label="Primary navigation"
         >
-          <div className="flex flex-wrap items-center justify-center gap-1 2xl:gap-2">
+          <div className="flex flex-1 items-center justify-center flex-nowrap whitespace-nowrap gap-0.5 xl:gap-1 2xl:gap-1.5 overflow-x-hidden">
             {nav.map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `relative rounded-md px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-200 2xl:px-4 2xl:text-sm ${
+                  `relative shrink-0 whitespace-nowrap rounded-md px-2 py-1.5 text-[11px] xl:px-2.5 xl:text-[11.5px] 2xl:px-3.5 2xl:py-2 2xl:text-[12.5px] font-semibold uppercase tracking-wider transition-all duration-150 ${
                     isActive
-                      ? 'bg-gold-500/20 text-gold-400 font-bold border-b-2 border-gold-400'
-                      : 'text-white/85 hover:bg-white/10 hover:text-white'
+                      ? 'bg-slate-100 text-[#002855] font-bold border-b-2 border-[#002855] rounded-b-none'
+                      : 'text-slate-700 hover:bg-slate-100/70 hover:text-[#002855]'
                   }`
                 }
               >
@@ -72,32 +72,28 @@ export default function Header() {
             ))}
           </div>
 
-          <div className="ml-4 flex items-center gap-2">
+          <div className="ml-2 shrink-0 flex items-center">
             <ThemeToggle />
           </div>
         </nav>
       </div>
 
-      {/* TABLET / MOBILE HEADER BAR */}
-      <div className="flex h-14 items-center justify-between px-4 xl:hidden">
-        <NavLink
-          to="/"
-          aria-label="UPWIECON Home"
-          className="flex items-center gap-2 text-white font-display font-bold text-base tracking-wide"
-        >
-          <LogoGroup compact />
-        </NavLink>
+      {/* TABLET / MOBILE HEADER ACTION BAR */}
+      <div className="flex h-12 items-center justify-between px-4 xl:hidden bg-white border-t border-slate-100">
+        <span className="text-xs font-bold uppercase tracking-wider text-[#002855]">
+          Menu
+        </span>
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            className="inline-flex items-center justify-center rounded-md p-2 text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-400"
+            className="inline-flex items-center justify-center rounded-md p-1.5 text-slate-800 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#002855]"
             aria-label="Open menu"
             aria-expanded={menuOpen}
           >
-            <Menu size={24} />
+            <Menu size={22} />
           </button>
         </div>
       </div>
@@ -116,7 +112,7 @@ export default function Header() {
               role="dialog"
               aria-modal="true"
               aria-label="Navigation menu"
-              className="ml-auto flex h-full w-[85%] max-w-sm flex-col bg-white dark:bg-navy-900 text-navy-900 dark:text-slate-100 shadow-2xl"
+              className="ml-auto flex h-full w-[85%] max-w-sm flex-col bg-white text-navy-950 shadow-2xl"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -124,14 +120,13 @@ export default function Header() {
               onClick={(e) => e.stopPropagation()}
             >
               {/* Mobile Drawer Header */}
-              <div className="flex items-center justify-between border-b border-navy-100 dark:border-navy-800 p-4">
+              <div className="flex items-center justify-between border-b border-slate-200 p-4 bg-white">
                 <LogoGroup compact />
                 <div className="flex items-center gap-2">
-                  <ThemeToggle />
                   <button
                     type="button"
                     onClick={() => setMenuOpen(false)}
-                    className="rounded-md p-2 text-navy-700 dark:text-navy-200 hover:bg-navy-50 dark:hover:bg-navy-800"
+                    className="rounded-md p-1.5 text-slate-700 hover:bg-slate-100"
                     aria-label="Close menu"
                   >
                     <X size={22} />
@@ -149,13 +144,13 @@ export default function Header() {
                     className={({ isActive }) =>
                       `flex items-center justify-between rounded-lg px-4 py-3 text-sm font-semibold transition-colors ${
                         isActive
-                          ? 'bg-navy-50 dark:bg-navy-800 text-accent-600 dark:text-gold-400 font-bold'
-                          : 'text-navy-800 dark:text-slate-200 hover:bg-navy-50 dark:hover:bg-navy-800'
+                          ? 'bg-slate-100 text-[#002855] font-bold border-l-4 border-[#002855]'
+                          : 'text-slate-700 hover:bg-slate-50 hover:text-navy-950'
                       }`
                     }
                   >
                     {item.label}
-                    <ChevronRight size={16} className="text-navy-400 dark:text-navy-500" />
+                    <ChevronRight size={16} className="text-slate-400" />
                   </NavLink>
                 ))}
               </nav>

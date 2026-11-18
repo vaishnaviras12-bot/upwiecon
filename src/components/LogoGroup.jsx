@@ -1,109 +1,82 @@
 import wit from '../assets/logos/wit.jpg'
 import wiePng from '../assets/logos/wie.png'
-import wieJpg from '../assets/logos/wie.jpg'
 import ieeePng from '../assets/logos/ieee.png'
-import ieeeJpg from '../assets/logos/ieee.jpg'
 import vmsbutuLogo from '../assets/logos/vmsbutu-logo.png'
-
-const logos = [
-  {
-    id: 'wit',
-    src: wit,
-    alt: 'Women\'s Institute of Technology (WIT) logo',
-  },
-  {
-    id: 'wie',
-    src: wiePng || wieJpg,
-    alt: 'IEEE Women in Engineering (WIE) logo',
-  },
-  {
-    id: 'ieee',
-    src: ieeePng || ieeeJpg,
-    alt: 'IEEE logo',
-  },
-  {
-    id: 'vmsbutu',
-    src: vmsbutuLogo,
-    alt: 'Veer Madho Singh Bhandari Uttarakhand Technical University (VMSBUTU) logo',
-  },
-]
-
-function LogoItem({ logo, compact }) {
-  const isWit = logo.id === 'wit'
-
-  if (compact) {
-    return (
-      <div
-        className={`flex items-center justify-center bg-white rounded-full shadow-sm overflow-hidden shrink-0 h-8 w-8 sm:h-9 sm:w-9 ${
-          isWit ? 'p-0' : 'p-0.5'
-        }`}
-      >
-        <img
-          src={logo.src}
-          alt={logo.alt}
-          className="h-full max-h-full w-auto max-w-full object-contain shrink-0"
-          style={isWit ? { transform: 'scale(1.22)', transformOrigin: 'center' } : undefined}
-        />
-      </div>
-    )
-  }
-
-  return (
-    <div className="flex items-center justify-center py-1">
-      <div
-        className={`flex items-center justify-center bg-white rounded-full shadow-md border border-white/50 h-14 w-14 sm:h-18 sm:w-18 lg:h-22 lg:w-22 xl:h-24 xl:w-24 overflow-hidden shrink-0 transition-transform duration-200 hover:scale-105 ${
-          isWit ? 'p-0.5' : 'p-1 sm:p-1.5 lg:p-2'
-        }`}
-      >
-        <img
-          src={logo.src}
-          alt={logo.alt}
-          className="h-full max-h-full w-auto max-w-full object-contain shrink-0"
-          style={isWit ? { transform: 'scale(1.22)', transformOrigin: 'center' } : undefined}
-        />
-      </div>
-    </div>
-  )
-}
 
 export default function LogoGroup({ compact = false }) {
   if (compact) {
     return (
-      <div className="flex items-center justify-center gap-2 sm:gap-3">
-        {logos.map((logo) => (
-          <LogoItem key={logo.id} logo={logo} compact />
-        ))}
+      <div className="inline-flex items-center gap-2.5 sm:gap-3.5 bg-white/95 p-1.5 rounded-lg border border-slate-200/60 shadow-sm">
+        <img
+          src={wit}
+          alt="WIT Logo"
+          className="h-8 sm:h-9 w-auto object-contain shrink-0"
+        />
+        <img
+          src={wiePng}
+          alt="IEEE WIE Logo"
+          className="h-6 sm:h-7 w-auto object-contain shrink-0"
+        />
+        <img
+          src={ieeePng}
+          alt="IEEE Logo"
+          className="h-5 sm:h-6 w-auto object-contain shrink-0"
+        />
+        <img
+          src={vmsbutuLogo}
+          alt="VMSBUTU Logo"
+          className="h-7 sm:h-8 w-auto object-contain shrink-0"
+        />
       </div>
     )
   }
 
-  const leftLogos = logos.slice(0, 2)
-  const rightLogos = logos.slice(2)
-
   return (
-    <div className="grid grid-cols-[1fr_auto_1fr] w-full items-center px-3 sm:px-6 lg:px-10">
-      {/* Left Logos: [ WIT ] [ WIE ] */}
-      <div className="flex items-center justify-start gap-3 sm:gap-5 lg:gap-6">
-        {leftLogos.map((logo) => (
-          <LogoItem key={logo.id} logo={logo} />
-        ))}
+    <div className="w-full max-w-7xl mx-auto grid grid-cols-[auto_1fr_auto] items-center px-3 sm:px-6 lg:px-8 py-2 sm:py-3 gap-2 sm:gap-4">
+      {/* Left Logos: WIT and WIE */}
+      <div className="flex items-center justify-start gap-3.5 sm:gap-5 md:gap-6 lg:gap-7 shrink-0">
+        <img
+          src={wit}
+          alt="WIT Dehradun Logo"
+          className="h-14 sm:h-16 md:h-18 lg:h-[86px] w-auto object-contain shrink-0"
+        />
+        <img
+          src={wiePng}
+          alt="IEEE Women in Engineering Logo"
+          className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain shrink-0"
+        />
       </div>
 
-      {/* Center Title: UPWIECON 2027 */}
-      <div className="flex flex-col items-center justify-center text-center px-3 sm:px-6">
-        <h1 className="font-display text-xl font-extrabold tracking-wider text-white drop-shadow-md sm:text-2xl lg:text-3xl xl:text-4xl">
-          UPWIECON 2027
+      {/* Center Title & Institutional Information */}
+      <div className="flex flex-col items-center justify-center text-center px-1 sm:px-2 md:px-3">
+        <h1 className="font-display text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-[#002855] leading-tight">
+          IEEE UPWIECON 2027
         </h1>
-        <p className="hidden text-[10px] font-semibold tracking-widest text-gold-400 uppercase sm:block lg:text-xs">
-          IEEE Women in Engineering Conference
-        </p>
+        <div className="mt-0.5 sm:mt-1 space-y-0.5 text-center">
+          <p className="text-[9.5px] sm:text-xs md:text-[13px] lg:text-sm font-semibold text-[#002855]/90 tracking-normal sm:tracking-wide">
+            Flagship Conference of IEEE Women in Engineering, UP Section
+          </p>
+          <p className="text-[9.5px] sm:text-[11px] md:text-xs font-medium text-slate-600 leading-tight">
+            Veer Madho Singh Bhandari Uttarakhand Technical University,
+          </p>
+          <p className="text-[9.5px] sm:text-[11px] md:text-xs font-medium text-slate-600 leading-tight">
+            Government Women Institute of Technology, Dehradun
+          </p>
+        </div>
       </div>
 
-      {/* Right Logos: [ IEEE ] [ VMSBUTU ] */}
-      <div className="flex items-center justify-end gap-3 sm:gap-5 lg:gap-6">
-        {rightLogos.map((logo) => (
-          <LogoItem key={logo.id} logo={logo} />
-        ))}
+      {/* Right Logos: IEEE and VMSBUTU */}
+      <div className="flex items-center justify-end gap-2.5 sm:gap-4 md:gap-5 shrink-0">
+        <img
+          src={ieeePng}
+          alt="IEEE Logo"
+          className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain shrink-0"
+        />
+        <img
+          src={vmsbutuLogo}
+          alt="VMSBUTU University Logo"
+          className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain shrink-0"
+        />
       </div>
     </div>
   )

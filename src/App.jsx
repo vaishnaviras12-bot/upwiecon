@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import History from './pages/History'
 import CallForPapers from './pages/CallForPapers'
 import SpecialSessions from './pages/SpecialSessions'
 import Speakers from './pages/Speakers'
@@ -16,6 +17,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/history" element={<History />} />
       <Route path="/call-for-paper" element={<CallForPapers />} />
       <Route path="/special-session" element={<SpecialSessions />} />
       <Route path="/speakers" element={<Speakers />} />

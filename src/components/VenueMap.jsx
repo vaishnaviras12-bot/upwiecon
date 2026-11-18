@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { venueDetails, transportationOptions } from '../data/transportationData'
-import { nearbyHotels, nearbyRestaurants } from '../data/nearbyAmenities'
+import { nearbyHotels, fartherHotels, nearbyRestaurants } from '../data/nearbyAmenities'
 import { ExternalLink } from 'lucide-react'
 
 // Fix default leaflet icon paths in webpack/vite
@@ -85,7 +85,7 @@ export default function VenueMap() {
     })
 
     // Add Nearby Hotels & Stays Markers (Purple Pin)
-    nearbyHotels.forEach((hotel) => {
+    ;[...nearbyHotels, ...fartherHotels].forEach((hotel) => {
       if (!hotel.coordinates) return
 
       const hotelIcon = L.divIcon({

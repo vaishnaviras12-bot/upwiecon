@@ -37,6 +37,12 @@ import jageshwarImg from '../assets/tourism/Jageshwar-dham.jpeg'
 import kausaniImg from '../assets/tourism/Kasauni.jpeg'
 import pithoragarhImg from '../assets/tourism/Pithoragarh.jpeg'
 import munsiyariImg from '../assets/tourism/Munsiyari.jpeg'
+import tehriImg from '../assets/tourism/tehri_lake.jpeg'
+import srinagarImg from '../assets/tourism/srinagar.jpeg'
+import corbettImg from '../assets/tourism/jim corbet national park.jpeg'
+import nainitalImg from '../assets/tourism/nanital.jpeg'
+import auliImg from '../assets/tourism/auli.jpeg'
+import mukteshwarImg from '../assets/tourism/Mukteswara_temple.jpg'
 
 // WIT Dehradun Reference Coordinates
 export const WIT_COORDINATES = {
@@ -465,8 +471,8 @@ const rawDestinations = [
     coordinates: { lat: 30.3783, lng: 78.4806 },
     roadDistanceKm: 110,
     travelTime: '~3 hrs 30 min',
-    image: null,
-    imageSource: null,
+    image: tehriImg,
+    imageSource: 'src/assets/tourism/tehri_lake.jpeg',
     tagline: "Asia's tallest dam and massive emerald reservoir hosting international water sports",
     description:
       'Built at the confluence of the Bhagirathi and Bhilangna rivers, Tehri Dam is one of the world’s tallest hydroelectric dams (260.5 meters high). The resulting massive reservoir forms Tehri Lake, an emerald water haven developed into India’s premier inland water sports destination.',
@@ -495,8 +501,8 @@ const rawDestinations = [
     coordinates: { lat: 30.2224, lng: 78.7844 },
     roadDistanceKm: 150,
     travelTime: '~4 hrs 30 min',
-    image: null,
-    imageSource: null,
+    image: srinagarImg,
+    imageSource: 'src/assets/tourism/srinagar.jpeg',
     tagline: 'Historic royal capital of Garhwal kingdom along the banks of the Alaknanda',
     description:
       'The historic capital of the Garhwal Kingdom from 1506 until 1804, Srinagar is nestled in a wide, picturesque valley along the Alaknanda River. Today it is the premier educational and cultural hub of Garhwal, housing HNB Garhwal Central University.',
@@ -644,8 +650,8 @@ const rawDestinations = [
     coordinates: { lat: 29.53, lng: 78.7747 },
     roadDistanceKm: 220,
     travelTime: '~5 hrs 30 min – 6 hours',
-    image: null,
-    imageSource: null,
+    image: corbettImg,
+    imageSource: 'src/assets/tourism/jim corbet national park.jpeg',
     tagline: "India's oldest national park and premier Royal Bengal tiger conservation haven",
     description:
       'Established in 1936 as Hailey National Park and later renamed in honor of legendary hunter-turned-conservationist Jim Corbett, this iconic sanctuary covers 520 sq km of dense sal forests, riverine grasslands, and the pristine Ramganga River.',
@@ -734,8 +740,8 @@ const rawDestinations = [
     coordinates: { lat: 29.3919, lng: 79.4542 },
     roadDistanceKm: 280,
     travelTime: '~6 hrs 30 min – 7 hours',
-    image: null,
-    imageSource: null,
+    image: nainitalImg,
+    imageSource: 'src/assets/tourism/nanital.jpeg',
     tagline: 'Enchanting emerald lake ringed by seven wooded hills in the heart of Kumaon',
     description:
       'Set around the eye-shaped, emerald-green Naini Lake, Nainital is the premier lake resort of the Kumaon region. Ringed by seven lush wooded hills (Ayarpata, Deopatha, Handi-Bandi, Cheena Peak, Alma, Laria-Kanta, and Sher-Ka-Danda), it boasts a pleasant subtropical mountain climate.',
@@ -765,8 +771,8 @@ const rawDestinations = [
     coordinates: { lat: 30.5283, lng: 79.5658 },
     roadDistanceKm: 295,
     travelTime: '~8 hrs 30 min – 9 hours',
-    image: null,
-    imageSource: null,
+    image: auliImg,
+    imageSource: 'src/assets/tourism/auli.jpeg',
     tagline: "India's premier skiing destination facing the majestic Nanda Devi peak",
     description:
       'Perched at altitudes ranging from 2,500 to 3,050 meters in Chamoli district, Auli is internationally acclaimed as India’s premier winter sports and ski destination. Vast slopes of powder snow are framed by coniferous and oak forests with unobstructed views of Nanda Devi, Kamet, and Dunagiri.',
@@ -885,8 +891,8 @@ const rawDestinations = [
     coordinates: { lat: 29.4722, lng: 79.6478 },
     roadDistanceKm: 330,
     travelTime: '~8 hours',
-    image: null,
-    imageSource: null,
+    image: mukteshwarImg,
+    imageSource: 'src/assets/tourism/Mukteswara_temple.jpg',
     tagline: 'Quiet orchard ridge offering 180-degree Himalayan vistas and the Chauli Ki Jali cliffs',
     description:
       'Situated at 2,171 meters on an elevated ridgeline in the Kumaon hills, Mukteshwar derives its name from an ancient 350-year-old Shiva temple. Surrounded by fruit orchards of apples, plums, and apricots with breathtaking vistas of the Trishul, Nanda Devi, and Panchachuli ranges.',
